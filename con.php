@@ -1,8 +1,8 @@
 <?php
     //especificação de onde esta o banco de dados
     $con = "mysql:dbname=blog;host=localhost";//tipo nome e local do banco
-    $dbuser = "";//usuário do banco de dados dentro das aspas
-    $dbpass = "";// senha do banco de dados dentro das aspas
+    $dbuser = "diogo";//usuário do banco de dados dentro das aspas
+    $dbpass = "d2g6s9";// senha do banco de dados dentro das aspas
 
     //função que é chamada para conectar ao banco de dados
     try{

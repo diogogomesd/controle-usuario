@@ -1,4 +1,7 @@
 <?php
+    //iniciando sessão
+    session_start();
+
     //conexao ao BD
     require 'con.php';
 

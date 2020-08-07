@@ -1,4 +1,9 @@
 <?php
+
+//iniciando sessão
+session_start();
+if(isset($_SESSION['id']) && empty($_SESSION['id']) == false){
+
     //associa o arquivo de conexao ao bd.
     require 'con.php';
 ?>
@@ -17,8 +22,10 @@
                 <th>E-MAIL</th>
                 <th>AÇÕES</th>
             </tr> 
-    <?php
+    <?php  
+
    
+
     //seleciona dados no banco e usuarios nome da tabela
     $sql = "SELECT *FROM usuarios";
     $sql = $pdo->query($sql);
@@ -34,6 +41,11 @@
             
         }
     }
+}
+else{
+    //redireciona para pg de login caso não esteja logado
+    header("Location: login.html");
+}
 ?>       
        
     </table>

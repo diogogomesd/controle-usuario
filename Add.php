@@ -1,4 +1,7 @@
 <?php
+    //iniciando sessão
+    session_start();
+    
     //busca conexao ao banco
     require 'con.php';
     //verifica se tem o campo nome na url e não está vazia
